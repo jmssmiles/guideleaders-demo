@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guideleaders | Agentic AI Coaching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white flex flex-col items-center justify-center min-h-screen p-6">
+
+    <div class="max-w-2xl text-center">
+        <h2 class="text-indigo-400 font-bold uppercase tracking-widest text-sm mb-4">Private Coaching Services</h2>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+            Applied Agentic AI for <br><span class="text-white">Organizational Transformation</span>
+        </h1>
+        <p class="text-slate-400 text-lg mb-8">
+            You’re taking the MIT course. We help you implement it. <br>Book a call with a Guideleaders coach to bridge the gap from theory to enterprise reality.
+        </p>
+
+        <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-2xl mb-8">
+            <p id="ga-status" class="text-indigo-300 font-mono text-sm mb-4 italic">"I'm ready to find you a coaching slot."</p>
+            <button onclick="bookNow()" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-105">
+                Schedule My MIT Course Consult
+            </button>
+        </div>
+
+        <a href="https://professional.mit.edu/course-catalog/applied-agentic-ai-organizational-transformation" 
+           class="text-slate-500 hover:text-white text-sm underline decoration-indigo-500 underline-offset-4">
+           View Official MIT Course Details
+        </a>
+    </div>
+
+    <script>
+        function bookNow() {
+            const status = document.getElementById('ga-status');
+            status.innerText = "GuideAgent: Checking Coach availability for Agentic AI consults...";
+            setTimeout(() => {
+                status.innerText = "GuideAgent: Found 2 slots tomorrow! Connecting you to the scheduler...";
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
