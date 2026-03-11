@@ -1,50 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Guideleaders | Agentic AI Coaching</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guideleaders | Private Coaching Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #0b1a35 0%, #020617 65%, #01040d 100%);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 980px;
+      text-align: center;
+    }
+
+    .hero {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 10px auto;
+      height: 110px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .eyebrow {
+      color: #8b93ff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 0.96;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      margin-bottom: 26px;
+    }
+
+    .subtext {
+      max-width: 760px;
+      margin: 0 auto 34px auto;
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.5;
+      color: #a9b4c8;
+    }
+
+    .cta-card {
+      max-width: 700px;
+      margin: 0 auto 32px auto;
+      background: rgba(28, 39, 66, 0.92);
+      border: 1px solid rgba(126, 145, 190, 0.22);
+      padding: 34px 32px;
+      border-radius: 22px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(8px);
+    }
+
+    .cta-quote {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-style: italic;
+      color: #aab7ff;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      background: linear-gradient(90deg, #5b5bd6, #6f5cff);
+      color: white;
+      padding: 18px 32px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 1.15rem;
+      transition: all 0.25s ease;
+      box-shadow: 0 10px 30px rgba(91, 91, 214, 0.24);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+    }
+
+    .cta-button:active {
+      transform: translateY(0);
+    }
+
+    .secondary-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: #8d99ae;
+      font-size: 1.05rem;
+      text-underline-offset: 4px;
+      transition: color 0.2s ease;
+    }
+
+    .secondary-link:hover {
+      color: #c4cffd;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 28px 16px;
+      }
+
+      .logo {
+        height: 90px;
+      }
+
+      .cta-card {
+        padding: 26px 18px;
+        border-radius: 18px;
+      }
+
+      .cta-button {
+        font-size: 1rem;
+        padding: 16px 20px;
+      }
+
+      .cta-quote {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-<body class="bg-slate-900 text-white flex flex-col items-center justify-center min-h-screen p-6">
+<body>
+  <main class="page">
+    <section class="hero">
+      <img src="Guideleaders-Logo.png" alt="Guideleaders Logo" class="logo" />
 
-<div style="text-align:center; margin-top:20px;">
-  <img src="Guideleaders-Logo.png" alt="Guidleaders-Logo" width="220">
-</div>
+      <div class="eyebrow">Private Coaching Services</div>
 
-    <div class="max-w-2xl text-center">
-        <h2 class="text-indigo-400 font-bold uppercase tracking-widest text-sm mb-4">Private Coaching Services</h2>
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-            Applied Agentic AI for <br><span class="text-white">Organizational Transformation</span>
-        </h1>
-        <p class="text-slate-400 text-lg mb-8">
-            You’re taking the MIT course. We help you implement it. <br>Book a call with a Guideleaders coach to bridge the gap from theory to enterprise reality.
-        </p>
+      <h1>Applied Agentic AI for Organizational Transformation</h1>
 
-        <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-2xl mb-8">
-            <p id="ga-status" class="text-indigo-300 font-mono text-sm mb-4 italic">"I'm ready to find you a coaching slot."</p>
-            <button onclick="bookNow()" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-105">
-                Schedule My MIT Course Consult
-            </button>
-        </div>
+      <p class="subtext">
+        You’re taking the MIT course. We help you implement it.
+        Book a call with a Guideleaders coach to bridge the gap from theory to enterprise reality.
+      </p>
 
-        <a href="https://professional.mit.edu/course-catalog/applied-agentic-ai-organizational-transformation" 
-           class="text-slate-500 hover:text-white text-sm underline decoration-indigo-500 underline-offset-4">
-           View Official MIT Course Details
-        </a>
-    </div>
+      <div class="cta-card">
+        <p class="cta-quote">"I'm ready to find you a coaching slot."</p>
 
-    <script>
-        function bookNow() {
-            const status = document.getElementById('ga-status');
-            status.innerText = "GuideAgent: Checking Coach availability for Agentic AI consults...";
-            setTimeout(() => {
-                status.innerText = "GuideAgent: Found 2 slots tomorrow! Connecting you to the scheduler...";
-            }, 1500);
-        }
-    </script>
+        <a href="#" class="cta-button">Schedule My MIT Course Consult</a>
+      </div>
+
+      <a href="https://www.classcentral.com/subject/ai" class="secondary-link" target="_blank" rel="noopener noreferrer">
+        View Official MIT Course Details
+      </a>
+    </section>
+  </main>
 </body>
 </html>
-
 
 
 
